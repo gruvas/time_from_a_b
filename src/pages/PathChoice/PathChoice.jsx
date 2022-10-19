@@ -37,6 +37,11 @@ const PathChoice = () => {
         {hour: 19+timezone, full_hours: 19+timezone, minute: 15, id: 4},
         {hour: 21+timezone, full_hours: 21+timezone, minute: 0, id: 5},
     ]
+    // PS: данное нагромождение массива с объектами можно избежать 
+    // (в данном тестовом задании я посчитал, что это будет не критично), 
+    // если использовать базу данных и оттуда забирать данные объекты или 
+    // вынести их в отдельный json файл, где будет храниться данные объекты.
+
 
     intermediate_array = date_correction(intermediate_array)
     
